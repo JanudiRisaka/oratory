@@ -1,0 +1,85 @@
+[debug] [2025-08-27T19:57:39.008Z] ----------------------------------------------------------------------
+[debug] [2025-08-27T19:57:39.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Janudi\.npm-global\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-08-27T19:57:39.012Z] CLI Version:   14.14.0
+[debug] [2025-08-27T19:57:39.012Z] Platform:      win32
+[debug] [2025-08-27T19:57:39.012Z] Node Version:  v22.18.0
+[debug] [2025-08-27T19:57:39.013Z] Time:          Thu Aug 28 2025 01:27:39 GMT+0530 (India Standard Time)
+[debug] [2025-08-27T19:57:39.013Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-27T19:57:39.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-27T19:57:39.020Z] > authorizing via signed-in user (jrsemini@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Janudi\Documents\GitHub\oratory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-08-27T20:00:38.619Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:38.620Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:38.622Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-08-27T20:00:39.624Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-08-27T20:00:39.624Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project oratory-d8128 (oratory) 
+[info] 
+=== Functions Setup
+[debug] [2025-08-27T20:00:46.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-27T20:00:46.519Z] > authorizing via signed-in user (jrsemini@gmail.com)
+[debug] [2025-08-27T20:00:46.519Z] [iam] checking project oratory-d8128 for permissions ["firebase.projects.get"]
+[debug] [2025-08-27T20:00:46.519Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:46.519Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:46.519Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oratory-d8128:testIamPermissions [none]
+[debug] [2025-08-27T20:00:46.519Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/oratory-d8128:testIamPermissions x-goog-quota-user=projects/oratory-d8128
+[debug] [2025-08-27T20:00:46.519Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oratory-d8128:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-08-27T20:00:48.470Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oratory-d8128:testIamPermissions 200
+[debug] [2025-08-27T20:00:48.470Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oratory-d8128:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-08-27T20:00:48.471Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:48.471Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:48.471Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:48.471Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:48.472Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-08-27T20:00:48.472Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/oratory-d8128
+[debug] [2025-08-27T20:00:48.473Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-08-27T20:00:48.473Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/oratory-d8128
+[debug] [2025-08-27T20:00:50.688Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/runtimeconfig.googleapis.com 200
+[debug] [2025-08-27T20:00:50.688Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-08-27T20:00:50.692Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com 200
+[debug] [2025-08-27T20:00:50.692Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-08-27T20:00:50.693Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:50.693Z] Checked if tokens are valid: true, expires at: 1756328184890
+[debug] [2025-08-27T20:00:50.693Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-08-27T20:00:50.693Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/oratory-d8128
+[debug] [2025-08-27T20:00:51.383Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-08-27T20:00:51.384Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/oratory-d8128/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2025-08-27T20:01:53.471Z] Running command with virtualenv: command="C:\Users\Janudi\Documents\GitHub\oratory\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-08-27T20:01:57.264Z] Error: spawn "C:\Users\Janudi\Documents\GitHub\oratory\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\Janudi\.npm-global\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Janudi\.npm-global\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\Janudi\.npm-global\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    at Process.callbackTrampoline (node:internal/async_hooks:130:17)
+[error] 
+[error] Error: An unexpected error has occurred.
