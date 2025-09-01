@@ -32,9 +32,9 @@ export const generateUnifiedFeedbackReport = (
     `You used ${detailed.nodCount} affirmative head nods during the session.`,
     `Your positivity score was ${positivityScore}%, reflecting your use of positive expressions like smiling.`
   ];
-  if (detailed.yawnCount > 0) {
+   if (detailed.yawnCount > 0) {
     const yawnText = detailed.yawnCount === 1 ? "1 yawn" : `${detailed.yawnCount} yawns`;
-    keyInsights.push(`The AI detected ${yawnText}, which can signal fatigue.`);
+    keyInsights.push(`The AI detected ${yawnText}, which can signal fatigue or disinterest to an audience.`);
   }
 
   const actionItems: UnifiedFeedbackData['actionItems'] = [];

@@ -14,6 +14,7 @@ import { writeSecurityAudit, fetchSecurityAudits, type SecurityAuditEvent } from
 import { toast } from "sonner";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 
+
 function mapAuthError(code: string): string {
   switch (code) {
     case "auth/invalid-credential":
@@ -67,6 +68,7 @@ export default function SecurityPage() {
     setIsUpdating(true);
     try {
       const cred = EmailAuthProvider.credential(user.email, passwords.current);
+
       await reauthenticateWithCredential(user, cred);
       await updatePassword(user, passwords.new);
       await writeSecurityAudit(user.uid, "password_changed");

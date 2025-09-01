@@ -293,8 +293,8 @@ export default function PracticePage() {
     console.log("[Practice Page] startsession function called.");
     if (!videoRef.current?.srcObject) {
       toast({
-      title: "Camera Is not ready",
-      description: "Click Camera Icon or Permission.",
+      title: "current password mismatch",
+      description: "Error pawwwed",
       variant: "destructive"
       })
       return;

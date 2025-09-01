@@ -626,7 +626,7 @@ this.captureCooldowns = { lastCaptureTime: 0 };
       averageSmileIntensity: calculateAverage(this.smileScores),
       averageBrowFurrow: calculateAverage(this.browFurrowScores),
       averageJawOpen: calculateAverage(this.jawOpenScores),
-      nodCount: this.nodCount, 
+      nodCount: this.nodCount,
       gazePercent: (this.eyeContactFrames / Math.max(1, this.totalFrames)) * 100,
       openingSmileIntensity: calculateAverage(this.openingSmileScores),
       eyeContactPercent: (this.eyeContactFrames / Math.max(1, this.totalFrames)) * 100,
